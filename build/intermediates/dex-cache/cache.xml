@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/coss/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.7.1/168a878946d665200edc733ac715b1264a6cd7b6/retrofit-1.7.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="168a878946d665200edc733ac715b1264a6cd7b6">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-1.7.1_18ae8cd51693b2b151271a04e2394818c95de766/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.2.4/7abd1ecef320da6a7679b137083151401fe8bf43/MPAndroidChart-v2.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7abd1ecef320da6a7679b137083151401fe8bf43">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v2.2.4_1a232dbb694d290b94fd33736ce3c089e38d81ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_5771d6e7950d6227de223135d0ff48883da7d800/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_41e437e37cae88d5550693a0162fb0cb9d2aed3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_fc1a0729e5160e989ff2d7e77549c4e9ae4fc7b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_d941f47bacf817a012d8c4c697ae34ffee8680cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_185106b09177d2ff29cdbf0b9dccf6559f89f6f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3_e1320027d9bbbf0b72df40c01c80b8134508c20e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3b874e208ecfb45179d3492bebceb184fec42eb6">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a722cad8c07e3ce1483cce320fa7a4e0a488853a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_3deb34ea1db563bc2e790e8ba3677cd9adbd7069/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_52ddace3329c99d8294b73f557424e46da7d3197/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_4e80162215a91154cf7932c57e9a0fd7b205cec5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98058c30df9a454bba7eadbaf9ba2f63af873897">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_df22b6eda31352f61197d7041f6281b4bcae74b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/coss/Downloads/ActivityTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_e952f796ef642ae9b928e9b72735e1185be836c6/classes.dex" />
+    </item>
+
+</items>

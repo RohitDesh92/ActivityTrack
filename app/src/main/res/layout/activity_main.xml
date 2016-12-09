@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="#fd7adfe6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:paddingLeft="15dp"
+            android:scaleType="center"
+            android:src="@mipmap/activity_tracker" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.35">
+
+
+            <Button
+                android:id="@+id/btn_home"
+                style="@style/DashboardButton"
+                android:layout_margin="30dp"
+                android:drawableTop="@mipmap/home"
+                android:text="HOME" />
+
+            <Button
+                android:id="@+id/btn_activity"
+                style="@style/DashboardButton"
+                android:layout_margin="20dp"
+                android:drawableTop="@mipmap/activity"
+                android:text="Activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_chart"
+                style="@style/DashboardButton"
+                android:layout_margin="30dp"
+                android:drawableTop="@mipmap/graph"
+                android:text="CHART"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_about"
+                style="@style/DashboardButton"
+                android:layout_margin="30dp"
+                android:drawableTop="@mipmap/info"
+                android:text="ABOUT"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Web Portal"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:background="#03e0e0"
+        android:textColor="#080808" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://104.197.95.54:5000/"
+        android:textColor="#fffbfb"
+        android:gravity="center"
+        android:paddingTop="10dip"
+        android:background="@mipmap/actionbar_background"
+        android:textColorHighlight="#cbcbcb"
+        android:textSize="20dp" />
+
+</LinearLayout>
