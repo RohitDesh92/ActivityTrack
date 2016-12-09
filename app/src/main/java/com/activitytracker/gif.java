@@ -24,7 +24,7 @@ public class gif extends Activity {
         setContentView(R.layout.activity_gif);
         RequestQueue queue = Volley.newRequestQueue(this);
 
-        final String url = "http://104.197.95.54:8080/activity/acceleration/prediction";
+        final String url = "http://104.154.252.38:8080/activity/acceleration/prediction";
 
 // prepare the Request
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -46,8 +46,6 @@ public class gif extends Activity {
         queue.add(stringRequest);
         gifView = (GifView) findViewById(R.id.gif_view);
         textViewInfo = (TextView) findViewById(R.id.textinfo);
-
-
 
     }
 }
