@@ -98,7 +98,7 @@ public class chart extends Activity {
 
         PieData data = new PieData(xValue, dataSet);
         dataSet.setColors(ColorTemplate.COLORFUL_COLORS); //
-        mChart.setDescription("Activity Distrubution");
+        mChart.setDescription("Activity Distribution");
         mChart.setDescriptionTextSize(25f);
         mChart.setData(data);
         mChart.setUsePercentValues(true);

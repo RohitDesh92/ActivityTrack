@@ -1,6 +1,7 @@
 package com.activitytracker;
 
 import com.activitytracker.model.Acceleration;
+import com.activitytracker.model.Result;
 import com.activitytracker.model.TrainingAcceleration;
 import android.support.v7.util.SortedList.Callback;
 
@@ -19,6 +20,9 @@ public interface CassandraRestApi {
 
         @POST("/training")
         public Response sendTrainingAccelerationValues(@Body TrainingAcceleration trainingAcceleration,Callback<Response> callback);
+
+        @POST("/training/result")
+        public  Response sendpredictionValues(@Body Result predict);
 
 
 }

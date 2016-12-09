@@ -3,14 +3,18 @@ package com.activitytracker;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.activitytracker.model.Container;
+
+import static com.activitytracker.Med_Data.str;
 
 public class InfoActivityUser extends Activity {
 
     TextView bmiTV;
     TextView bmiResult;
+    EditText recTV;
 
     String height;
     String weight;
@@ -26,6 +30,7 @@ public class InfoActivityUser extends Activity {
         con=Container.getinstane();
         bmiTV = (TextView) findViewById(R.id.ht);
         bmiResult = (TextView) findViewById(R.id.wt);
+        recTV = (EditText) findViewById(R.id.rec);
 
         Log.d("dd","OnCreate");
 
@@ -73,21 +78,47 @@ public class InfoActivityUser extends Activity {
             bmiResult.setText("Obese class 3 (very Severely Obese)");
         }
 
+        String redval = str ;
 
 
         Log.d("dd","OnResume()");
-        /*height=c.getHeight();
-        weight=c.getWeight();
+        Log.d("d1",redval);
+        int dist = 15;
 
-      if(c.getHeight()!= null || c.getWeight()!=null ) {
-          Log.d("pp", height);
-          Log.d("cc", weight);
-        }
-      else
-      {
-          Log.d("p","Null Value set" );
+        switch(redval)
+           {
+               case "Joint Pain" :
+                                        if(dist >= 15)
+                                        recTV.setText("You are doing well as you are walking your goal  ");
+                                        else
+                                            recTV.setText("You need to walk more to achieve your goal");
+                                        break;
 
-      }*/
+               case "Blood Pressure" :  if(dist >= 15)
+                                        recTV.setText("You are doing well as you are walking your goal  ");
+                                        else
+                                        recTV.setText("You need to walk more to achieve your goal");
+                                        break;
+
+               case "Diabetes" :        if(dist >= 15)
+                                        recTV.setText("You are doing well as you are walking your goal  ");
+                                        else
+                                        recTV.setText("You need to walk more to achieve your goal");
+                                        break;
+
+               case "Sleep Disorder" :  if(dist >= 15)
+                                        recTV.setText("You are doing well as you are walking your goal  ");
+                                        else
+                                        recTV.setText("You need to walk more to achieve your goal");
+                                        break;
+
+               case "None":             if(dist >= 15)
+                                        recTV.setText("You are doing well as you are walking your goal  ");
+                                        else
+                                        recTV.setText("You need to walk more to achieve your goal");
+                                        break;
+           }
+
 
 
     }

@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.activitytracker.CassandraRestApi;
 import com.activitytracker.model.Acceleration;
+import com.activitytracker.model.Result;
 
 import java.util.Date;
 
@@ -94,6 +95,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         Acceleration capturedAcceleration = getAccelerationFromSensor(event);
         updateTextView(capturedAcceleration);
         new SendAccelerationAsyncTask().execute(capturedAcceleration);
+        new SendResult().execute(capturedAcceleration);
     }
 
     @Override
@@ -171,6 +173,8 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     private Acceleration getAccelerationFromSensor(SensorEvent event) {
         long timestamp = (new Date()).getTime() + (event.timestamp - System.nanoTime()) / 1000000L;
         return new Acceleration(event.values[0], event.values[1], event.values[2], timestamp);
+
+
     }
 
 
@@ -183,9 +187,34 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         protected Void doInBackground(Acceleration... params) {
             try {
                 cassandraRestApi.sendAccelerationValues(params[0]);
+
             } catch(Exception e) {
                 e.printStackTrace();
             }
+            return null;
+        }
+    }
+
+    private class SendResult extends AsyncTask<Acceleration, Void, Void> {
+        @Override
+        protected Void doInBackground(Acceleration... accelerations) {
+            Acceleration acceleration = accelerations[0];
+            double x = acceleration.getX();
+            double y = acceleration.getY();
+            double z = acceleration.getZ() - SensorManager.GRAVITY_EARTH;
+
+            double res  = (x * x + y * y + z * z+2*(x*y+x*z+z*y))
+                    / (SensorManager.GRAVITY_EARTH * SensorManager.GRAVITY_EARTH);
+
+            if(res >= 20){
+                Result result = new Result("Jogging",System.currentTimeMillis());
+                try {
+                    cassandraRestApi.sendpredictionValues(result);
+                } catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+
             return null;
         }
     }
