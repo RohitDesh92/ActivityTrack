@@ -16,6 +16,7 @@ public class GifView extends View {
     public Movie mMovie;
     public long movieStart;
     private InputStream is;
+    String str = "Jogging";
     public GifView(Context context) {
         super(context);
         initializeView();
@@ -33,7 +34,6 @@ public class GifView extends View {
 
     private void initializeView() {
         GetActivityType Atype = new GetActivityType();
-        String str=Atype.getType();
        switch (str){
             case "Walking":is = getContext().getResources().openRawResource(R.drawable.walking);
                             break;
@@ -41,15 +41,12 @@ public class GifView extends View {
                             break;
             case "Standing":is = getContext().getResources().openRawResource(R.drawable.standing);
                             break;
-            case "Sitting":is = getContext().getResources().openRawResource(R.drawable.sitting);
-                           break;
             case "Upstairs":is = getContext().getResources().openRawResource(R.drawable.ascendingstairs);
                             break;
-            case "Downstairs":is = getContext().getResources().openRawResource(R.drawable.descendingstairs);
-                             break;
             default: is = getContext().getResources().openRawResource(R.drawable.walking);
         }
         //is = getContext().getResources().openRawResource(R.drawable.descendingstairs);
+        str=Atype.getType();
         mMovie = Movie.decodeStream(is);
     }
 
