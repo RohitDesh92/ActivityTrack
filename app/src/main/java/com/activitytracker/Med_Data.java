@@ -24,31 +24,7 @@ public class Med_Data extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_med__data);
 
-
     }
-
-   /* public void addListenerOnButton() {
-        rg = (RadioGroup) findViewById(R.id.radiogroup);
-        btnDisplay = (Button) findViewById(R.id.button2);
-        btnDisplay.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                int value = rg.getCheckedRadioButtonId();
-
-                System.out.println(String.valueOf(value));
-
-                radioButton = (RadioButton) findViewById(value);
-                radiovalue = radioButton.getText().toString();
-                str = radiovalue;
-               System.out.println(radiovalue);
-
-            }
-
-        });
-
-    }*/
-
 
    public void register(View v)
     {
@@ -71,12 +47,7 @@ public class Med_Data extends Activity {
                 Log.d("we",str);
             }
 
-
         });
-
-     // Intent i = new Intent(this, MainActivity.class);
-      //i.putExtra("rad",str);
-       //  Log.d("we",str);
 
     }
 
