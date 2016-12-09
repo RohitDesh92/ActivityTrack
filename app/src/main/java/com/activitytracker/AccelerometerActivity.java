@@ -28,7 +28,7 @@ import retrofit.RestAdapter;
 
 public class AccelerometerActivity extends AppCompatActivity implements SensorEventListener {
 
-    private String restURL = "http://104.198.222.13:8080/activity";
+    private String restURL = "http://104.154.252.38:8080/activity";
     private TextView acceleration;
     private Button myStartButton;
     private Button myStopButton;
@@ -77,9 +77,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -103,9 +100,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         //Do nothing
     }
 
-    /**
-     * Init REST api to post data.
-     */
     private void initRestApi() {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint(restURL)
@@ -114,9 +108,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         cassandraRestApi = restAdapter.create(CassandraRestApi.class);
     }
 
-    /**
-     * Init start and stop buttons actions.
-     */
+
     private void initActionButtons() {
         myStartButton = (Button) findViewById(R.id.button_start);
         myStopButton = (Button) findViewById(R.id.button_stop);
@@ -154,10 +146,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         sm.unregisterListener(this);
     }
 
-    /**
-     * Update acceleration text view with new values.
-     * @param capturedAcceleration
-     */
+
     private void updateTextView(Acceleration capturedAcceleration) {
         acceleration.setText("X:" + capturedAcceleration.getX() +
                 "\nY:" + capturedAcceleration.getY() +
@@ -165,11 +154,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
                 "\nTimestamp:" + capturedAcceleration.getTimestamp());
     }
 
-    /**
-     * Get accelerometer sensor values and map it into an acceleration model.
-     * @param event
-     * @return an acceleration model.
-     */
     private Acceleration getAccelerationFromSensor(SensorEvent event) {
         long timestamp = (new Date()).getTime() + (event.timestamp - System.nanoTime()) / 1000000L;
         return new Acceleration(event.values[0], event.values[1], event.values[2], timestamp);
@@ -178,9 +162,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     }
 
 
-    /**
-     * Asyncronous task to post request to a Rest API.
-     */
     private class SendAccelerationAsyncTask extends AsyncTask<Acceleration, Void, Void> {
 
         @Override
@@ -214,7 +195,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
                     e.printStackTrace();
                 }
             }
-
             return null;
         }
     }
