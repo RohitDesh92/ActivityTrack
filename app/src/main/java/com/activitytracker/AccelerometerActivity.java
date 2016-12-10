@@ -18,9 +18,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-import com.activitytracker.CassandraRestApi;
 import com.activitytracker.model.Acceleration;
-import com.activitytracker.model.Result;
 
 import java.util.Date;
 
@@ -45,14 +43,13 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         setContentView(R.layout.activity_accelerometer);
         acceleration = (TextView) findViewById(R.id.acceleration);
 
-        //Init accelerometer sensor
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelerometer = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "My Tag");
         wl.acquire();
 
-        initRestApi();
+        initalizeRestApi();
         initActionButtons();
     }
     public void onBackPressed() {
@@ -70,7 +67,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_accelerometer, menu);
         return true;
     }
@@ -78,8 +74,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -91,20 +85,17 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     public void onSensorChanged(SensorEvent event) {
         Acceleration capturedAcceleration = getAccelerationFromSensor(event);
         updateTextView(capturedAcceleration);
-        new SendAccelerationAsyncTask().execute(capturedAcceleration);
-        new SendResult().execute(capturedAcceleration);
+        new SendAccValuesAsyncTask().execute(capturedAcceleration);
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        //Do nothing
     }
 
-    private void initRestApi() {
+    private void initalizeRestApi() {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint(restURL)
                 .build();
-
         cassandraRestApi = restAdapter.create(CassandraRestApi.class);
     }
 
@@ -162,7 +153,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     }
 
 
-    private class SendAccelerationAsyncTask extends AsyncTask<Acceleration, Void, Void> {
+    private class SendAccValuesAsyncTask extends AsyncTask<Acceleration, Void, Void> {
 
         @Override
         protected Void doInBackground(Acceleration... params) {
@@ -176,26 +167,4 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         }
     }
 
-    private class SendResult extends AsyncTask<Acceleration, Void, Void> {
-        @Override
-        protected Void doInBackground(Acceleration... accelerations) {
-            Acceleration acceleration = accelerations[0];
-            double x = acceleration.getX();
-            double y = acceleration.getY();
-            double z = acceleration.getZ() - SensorManager.GRAVITY_EARTH;
-
-            double res  = (x * x + y * y + z * z+2*(x*y+x*z+z*y))
-                    / (SensorManager.GRAVITY_EARTH * SensorManager.GRAVITY_EARTH);
-
-            if(res >= 20){
-                Result result = new Result("Jogging",System.currentTimeMillis());
-                try {
-                    cassandraRestApi.sendpredictionValues(result);
-                } catch (Exception e){
-                    e.printStackTrace();
-                }
-            }
-            return null;
-        }
-    }
 }
