@@ -34,8 +34,8 @@ public class chart extends Activity {
     // private FrameLayout chartLayout;
     private PieChart mChart;
 
-    private float[] yAxis = {3, 5, 8, 9, 12};
-    private String[] xAxis = {"Walking", "Standing", "climbing", "Running", "sleeping"};
+    private float[] yAxis = {13, 5, 4, 8};
+    private String[] xAxis = {"Walking", "Standing", "climbing", "Running"};
 
 
     @Override

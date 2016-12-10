@@ -18,7 +18,7 @@
         <activity
             android:name=".MainActivity"
             android:label="MainActivity"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="com.activitytracker.MainActivity" />
 
@@ -51,16 +51,6 @@
             android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="com.activitytracker.AccelerometerActivity" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Info_Activity"
-            android:label="@string/title_activity_info_"
-            android:theme="@style/Theme.AppCompat">
-            <intent-filter>
-                <action android:name="com.activitytracker.Info_Activity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

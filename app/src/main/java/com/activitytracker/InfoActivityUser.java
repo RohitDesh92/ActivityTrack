@@ -12,7 +12,7 @@ import static com.activitytracker.Med_Data.str;
 
 public class InfoActivityUser extends Activity {
 
-    private int DISTANTCE = 25;
+    private int DISTANTCE = 20;
     TextView bmiTV;
     TextView bmiResult;
     EditText recTV;
@@ -72,28 +72,28 @@ public class InfoActivityUser extends Activity {
 
         switch (redval) {
             case "Joint Pain":
-                if (DISTANTCE > 15) {
+                if (DISTANTCE >= 18) {
                     recTV.setText("You are doing well as you are walking your goal");
                 } else
                     recTV.setText("You need to walk more to achieve your goal");
                 break;
 
             case "Blood Pressure":
-                if (DISTANTCE >= 15)
+                if (DISTANTCE >= 20)
                     recTV.setText("You are doing well as you are walking your goal  ");
                 else
                     recTV.setText("You need to walk more to achieve your goal");
                 break;
 
             case "Diabetes":
-                if (DISTANTCE >= 15)
+                if (DISTANTCE > 25)
                     recTV.setText("You are doing well as you are walking your goal  ");
                 else
                     recTV.setText("You need to walk more to achieve your goal");
                 break;
 
             case "Sleep Disorder":
-                if (DISTANTCE > 15)
+                if (DISTANTCE > 30)
                     recTV.setText("You are doing well as you are walking your goal  ");
                 else
                     recTV.setText("You need to walk more to achieve your goal");

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_info_user"
     android:layout_width="match_parent"
@@ -11,52 +12,9 @@
     tools:context="com.activitytracker.InfoActivityUser"
     android:background="@color/colorPrimaryDark">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
-        android:id="@+id/ht"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ht"
-        android:layout_marginTop="50dp"
-        android:id="@+id/wt"
-        android:layout_toEndOf="@+id/ht"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textAlignment="center" />
-
-    <TextView
-        android:text="BMI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:id="@+id/textView11"
-        android:textStyle="normal|bold" />
-
-    <TextView
-        android:text="Category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ht"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:id="@+id/textView12"
-        android:textStyle="normal|bold" />
-
     <EditText
-        android:inputType="textPersonName"
+        android:inputType="textMultiLine"
         android:ems="10"
-        android:layout_below="@+id/wt"
         android:id="@+id/rec"
         android:breakStrategy="high_quality"
         android:fadingEdge="horizontal|vertical"
@@ -64,11 +22,68 @@
         android:textStyle="normal|bold"
         android:theme="@style/AppTheme"
         android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:textAlignment="textStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp"
+        android:layout_height="150dp"
+        android:verticalScrollbarPosition="defaultPosition"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView12"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:layout_below="@+id/ht"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="18dp"
-        android:layout_marginTop="30dp"
-        android:layout_height="200dp"
-        android:layout_width="match_parent" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/ht"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:text="BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView11"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wt"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:textSize="24sp" />
 
 </RelativeLayout>

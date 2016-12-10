@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -8,13 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clickable="false"
-            android:paddingLeft="15dp"
-            android:scaleType="center"
-            android:src="@mipmap/activity_tracker" />
     </LinearLayout>
 
     <LinearLayout
@@ -24,35 +18,51 @@
         android:orientation="vertical"
         android:weightSum="1">
 
+        <TextView
+            android:text="Activity Goal Tracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:background="@android:drawable/screen_background_dark_transparent" />
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="165dp"
+            android:layout_height="69dp"
             android:orientation="horizontal"
-            android:layout_weight="0.35">
+            android:weightSum="1"
+            android:layout_weight="0.87">
 
 
             <Button
                 android:id="@+id/btn_home"
                 style="@style/DashboardButton"
                 android:layout_margin="30dp"
-                android:drawableTop="@mipmap/home"
-                android:text="HOME" />
+                android:drawableTop="@mipmap/home1"
+                android:text="Start"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_weight="0.47" />
 
             <Button
                 android:id="@+id/btn_activity"
                 style="@style/DashboardButton"
                 android:layout_margin="20dp"
                 android:drawableTop="@mipmap/activity"
-                android:text="Activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:text="Activity Recognize"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_weight="0.32" />
         </LinearLayout>
 
         <LinearLayout
 
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.04">
 
 
             <Button
@@ -61,15 +71,20 @@
                 android:layout_margin="30dp"
                 android:drawableTop="@mipmap/graph"
                 android:text="CHART"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_weight="0.66" />
 
             <Button
                 android:id="@+id/btn_about"
                 style="@style/DashboardButton"
                 android:layout_margin="30dp"
                 android:drawableTop="@mipmap/info"
-                android:text="ABOUT"
-                android:layout_height="wrap_content" />
+                android:text="Recommendation"
+                android:layout_height="131dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="131dp" />
 
 
         </LinearLayout>
@@ -78,25 +93,28 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Web Portal"
+        android:text="Cloud URL"
         android:id="@+id/textView3"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
-        android:background="#03e0e0"
-        android:textColor="#080808" />
+        android:background="@color/colorPrimary"
+        android:textColor="#080808"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="http://104.197.95.54:5000/"
-        android:textColor="#fffbfb"
+        android:text="http://104.154.252.38:8080/"
+        android:textColor="@android:color/background_dark"
         android:gravity="center"
         android:paddingTop="10dip"
-        android:background="@mipmap/actionbar_background"
+        android:background="@color/colorPrimaryDark"
         android:textColorHighlight="#cbcbcb"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingBottom="10dp" />
 
 </LinearLayout>
