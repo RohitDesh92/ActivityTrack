@@ -1,22 +1,20 @@
 package com.activitytracker;
 
 import java.io.InputStream;
+
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Movie;
-import android.net.Uri;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 public class GifView extends View {
     public Movie mMovie;
-    public long movieStart;
+    public long image;
     private InputStream is;
-    String str = "Jogging";
+
+
     public GifView(Context context) {
         super(context);
         initializeView();
@@ -34,19 +32,26 @@ public class GifView extends View {
 
     private void initializeView() {
         GetActivityType Atype = new GetActivityType();
-       switch (str){
-            case "Walking":is = getContext().getResources().openRawResource(R.drawable.walking);
-                            break;
-            case "Jogging":is = getContext().getResources().openRawResource(R.drawable.running);
-                            break;
-            case "Standing":is = getContext().getResources().openRawResource(R.drawable.standing);
-                            break;
-            case "Upstairs":is = getContext().getResources().openRawResource(R.drawable.ascendingstairs);
-                            break;
-            default: is = getContext().getResources().openRawResource(R.drawable.walking);
+        String str = Atype.getType();
+        switch (str) {
+            case "Walking":
+                is = getContext().getResources().openRawResource(R.drawable.walking);
+                break;
+            case "Jogging":
+                is = getContext().getResources().openRawResource(R.drawable.running);
+                break;
+            case "Standing":
+                is = getContext().getResources().openRawResource(R.drawable.standing);
+                break;
+            case "Upstairs":
+                is = getContext().getResources().openRawResource(R.drawable.ascendingstairs);
+                break;
+            case "Downstairs":
+                is = getContext().getResources().openRawResource(R.drawable.ascendingstairs);
+                break;
+            default:
+                is = getContext().getResources().openRawResource(R.drawable.standing);
         }
-        //is = getContext().getResources().openRawResource(R.drawable.descendingstairs);
-        str=Atype.getType();
         mMovie = Movie.decodeStream(is);
     }
 
@@ -55,28 +60,17 @@ public class GifView extends View {
         canvas.drawColor(Color.TRANSPARENT);
         super.onDraw(canvas);
         long now = android.os.SystemClock.uptimeMillis();
-        if (movieStart == 0) {
-            movieStart = now;
+        if (image == 0) {
+            image = now;
         }
         if (mMovie != null) {
-            int relTime = (int) ((now - movieStart) % mMovie.duration());
+            int relTime = (int) ((now - image) % mMovie.duration());
             mMovie.setTime(relTime);
-            float scaleWidth = (float) ((getWidth() / (1f*mMovie.width())));//add 1f does the trick
-            float scaleHeight = (float) ((getHeight() / (1f*mMovie.height())));
+            float scaleWidth = (float) ((getWidth() / (1f * mMovie.width())));
+            float scaleHeight = (float) ((getHeight() / (1f * mMovie.height())));
             canvas.scale(scaleWidth, scaleHeight);
-            mMovie.draw(canvas, 0, 0);//mMovie is my gif picture
-            //mMovie.draw(canvas, getWidth() - mMovie.width(), getHeight() - mMovie.height());
+            mMovie.draw(canvas, 0, 0);
             this.invalidate();
         }
-    }
-    private int gifId;
-
-    public void setGIFResource(int resId) {
-        this.gifId = resId;
-        initializeView();
-    }
-
-    public int getGIFResource() {
-        return this.gifId;
     }
 }

@@ -48,7 +48,5 @@ public class Med_Data extends Activity {
             }
 
         });
-
     }
-
 }

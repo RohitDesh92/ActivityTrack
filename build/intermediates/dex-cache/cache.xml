@@ -2,130 +2,112 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8e39ab7c3f283d89b45bef1d22f0aa026091147c">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_61b1f56eabe1e749a8047f0b3c5c86e172d49b54/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_546c567b54b0a58d7632f646db35c76f6b082e63/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_ae6692e61040ce9fe08d44577c4f2e70a2281887/classes.dex" />
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.3.0_b15c002f92ba96ec80ba7fb2f17fce2b63b06dbd.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_097e5df8397f2938ae65b74439d84e18ba5d7a82/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3_e1320027d9bbbf0b72df40c01c80b8134508c20e/classes.dex" />
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/gson-2.3_b3eead059c9f6eb31757d9427c746c90bcf4d5cf.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_6cfde5999ea53de13bf6f761d8a001e8e0784a0e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.7.1/168a878946d665200edc733ac715b1264a6cd7b6/retrofit-1.7.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="168a878946d665200edc733ac715b1264a6cd7b6">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-1.7.1_18ae8cd51693b2b151271a04e2394818c95de766/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.2.4/7abd1ecef320da6a7679b137083151401fe8bf43/MPAndroidChart-v2.2.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="7abd1ecef320da6a7679b137083151401fe8bf43">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/MPAndroidChart-v2.2.4_1a232dbb694d290b94fd33736ce3c089e38d81ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_a9cad620f7b6d5a1ac7ca3f9c108ceae3c9d768e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_38fab9b95e150ccf107eeb88c75db2a3d8177ad1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9b12a4ba257de82ded5e3e9685e8b7784329c4bf">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_28327c294b573c17aa21a745ff567e0fac6324be/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_25ca4f10b780c777dad5932c40c7e088d2e49ee9/classes.dex" />
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_436797d2e3eb6f398adb06bd912a25da08b226c3.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/coss/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.3.0_9c2ac3d00ad1e3c722131cce92822f76c5ab78f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_5d247e8f1936b0878606fb8c5512f41ad182d745.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.2.4/7abd1ecef320da6a7679b137083151401fe8bf43/MPAndroidChart-v2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7abd1ecef320da6a7679b137083151401fe8bf43">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v2.2.4_ab7df56059153242723cd11e00267722f3f359f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_48e666457be0aca1e35ac2f68d6a9ba97dcdba48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_41e437e37cae88d5550693a0162fb0cb9d2aed3e/classes.dex" />
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_4ea24875b197b41ac33e05fd152918b32926851c.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.3.0_ca57f8806c5538743118d34eff6f2978ffe1ca3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="/Users/coss/Desktop/ActivityTrack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_2e4c39ca155d5babc548f1c74d274479f76d6f6e/classes.dex" />
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.3.0_fc2b7770fb17127ea164e7925f44b38807203de5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.7.1/168a878946d665200edc733ac715b1264a6cd7b6/retrofit-1.7.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="168a878946d665200edc733ac715b1264a6cd7b6">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/retrofit-1.7.1_741a36ead39cb0df2d27c096a6eaaf3dd1b4f13c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/sheebanshaikh/Downloads/ActivityTrack/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_e082dd584ffc41604718d178a81398a506a25c7a.jar" />
     </item>
 
 </items>

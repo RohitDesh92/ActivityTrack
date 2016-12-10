@@ -148,8 +148,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     private Acceleration getAccelerationFromSensor(SensorEvent event) {
         long timestamp = (new Date()).getTime() + (event.timestamp - System.nanoTime()) / 1000000L;
         return new Acceleration(event.values[0], event.values[1], event.values[2], timestamp);
-
-
     }
 
 
@@ -159,7 +157,6 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         protected Void doInBackground(Acceleration... params) {
             try {
                 cassandraRestApi.sendAccelerationValues(params[0]);
-
             } catch(Exception e) {
                 e.printStackTrace();
             }

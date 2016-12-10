@@ -27,26 +27,19 @@ public class Initial_Activity extends Activity {
         height = (TextView) findViewById(R.id.height);
         weight = (TextView) findViewById(R.id.weight);
         dob = (TextView) findViewById(R.id.dob);
-
     }
-
-
 
     public void conti(View view)
     {
         con=Container.getinstane();
         con.height=height.getText().toString();
         con.weight=weight.getText().toString();
-
         Log.d("a",nameTv.getText().toString());
         Log.d("b",height.getText().toString());
         Log.d("c",weight.getText().toString());
         Log.d("d",dob.getText().toString());
 
-
-
         Intent i = new Intent(this, Med_Data.class);
         startActivity(i);
-
     }
 }

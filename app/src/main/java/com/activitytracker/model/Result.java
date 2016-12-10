@@ -18,7 +18,6 @@ public class Result {
         return activity;
     }
 
-
     public long getTimestamp() {
         return timestamp;
     }

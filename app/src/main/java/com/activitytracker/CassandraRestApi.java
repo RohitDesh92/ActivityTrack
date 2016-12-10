@@ -12,13 +12,9 @@ import retrofit.http.POST;
 public interface CassandraRestApi {
 
         @Headers("Content-Type: application/json")
-        @POST("/acceleration")
+        @POST("/accValues")
         public Response sendAccelerationValues(@Body Callback<Acceleration> accelerationCallback );
 
         @POST("/training")
         public Response sendTrainingAccelerationValues(@Body TrainingAcceleration trainingAcceleration,Callback<Response> callback);
-
-        @POST("/training/result")
-        public  Response sendpredictionValues(@Body Result predict);
-
 }
