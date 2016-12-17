@@ -1,9 +1,5 @@
 package com.activitytracker.model;
 
-/**
- * Created by Rohit on 12/9/16.
- */
-
 public class Result {
 
     private String activity;

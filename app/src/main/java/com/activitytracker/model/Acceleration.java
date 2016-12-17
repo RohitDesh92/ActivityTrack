@@ -2,9 +2,6 @@ package com.activitytracker.model;
 
 import android.support.v7.util.SortedList;
 
-/**
- * Created by aksha on 27-04-2016.
- */
 public class Acceleration extends SortedList.Callback<Acceleration> {
 
         private long timestamp;

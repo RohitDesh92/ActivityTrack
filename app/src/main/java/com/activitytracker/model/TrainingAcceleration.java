@@ -1,6 +1,5 @@
 package com.activitytracker.model;
 
-
 public class TrainingAcceleration {
     private String userID;
     private String activity;
