@@ -26,7 +26,7 @@ public class gif extends Activity {
 
         final String url = "http://104.154.252.38:8080/activity/acceleration/prediction";
 
-// prepare the Request
+
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -42,7 +42,7 @@ public class gif extends Activity {
             }
         });
 
-// add it to the RequestQueue
+
         queue.add(stringRequest);
         gifView = (GifView) findViewById(R.id.gif_view);
         textViewInfo = (TextView) findViewById(R.id.textinfo);

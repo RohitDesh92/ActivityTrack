@@ -30,7 +30,6 @@ import com.android.volley.toolbox.Volley;
 import com.android.volley.VolleyError;
 
 public class chart extends Activity {
-    // private FrameLayout chartLayout;
     private PieChart chart;
 
     private float[] yAxis = {13, 5, 4, 8};
